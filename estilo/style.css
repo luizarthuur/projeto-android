@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* Cores do projeto>
+#C5EBD6
+#83E1AD
+#3DDC84
+#2FA866
+#1A5C37
+#063D1E
+*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  @font-face {
+    font-family: 'Android';
+    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    }
+
+
+:root {
+    --cor001: #C5EBD6;
+    --cor002: #83E1AD;
+    --cor003: #3DDC84;
+    --cor004: #2FA866;
+    --cor005: #1A5C37;
+    --cor006: #063D1E;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: font-family: 'Work Sans', sans-serif;
+    --fonte-android: 'Android', cursive;
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--cor001);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor004), var(--cor006));
+    min-height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+header>p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    margin: auto;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px black;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--cor006);
+    color: var(--cor001);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+    border-radius: 5px;
+
+}
+
+nav > a{
+    color: var(--cor001);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor005);
+    border-radius: 2px;
+    color: var(--cor006);
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+main strong{
+    color: var(--cor006);
+    font-weight: bold;
+    
+    padding: 2px 6px;
+}
+
+main img{
+    width: 100%;
+    
+}
+
+main img.pequena{
+    display: block;
+    margin: auto;
+    max-width: 350;
+}
+
+main a{
+    background-color: var(--cor001);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor006);
+    padding: 2px 6px;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor003);
+
+}
+
+main h1{
+    color: var(--cor006);
+    font-family: var(--fonte-android);
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor005);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor001),transparent);
+    text-indent: 10px;
+}
+main h3{
+    font-family: var(--fonte-android);
+    }
+
+aside{
+    background-color: var(--cor001);
+    padding: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+}
+
+aside > ul{
+    list-style-type: '\1F5F9\00A0\00a0';
+    list-style-position: inside;
+    columns: 2
+}
+
+aside > h3{
+    background-color: var(--cor003);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+    
+footer{
+    background-color: var(--cor006);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor001);
+}
+
+
+div.video{
+    background-color: var(--cor006);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
